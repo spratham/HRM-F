@@ -51,7 +51,7 @@ h3 {
   font-size: 3.5rem;
 }
 
-.mg-heading {
+.md-heading {
   font-size: 2.2rem;
 }
 
@@ -71,9 +71,23 @@ h3 {
   color: #555;
 }
 
+.btn {
+  display: inline;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+.btn-primary {
+  background-color: white;
+  border-radius: 10rem;
+}
+
 /* ######### header styling ####### */
 
 header {
+  position: relative;
   height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/header-image.jpg");
@@ -119,4 +133,23 @@ header .navbar .nav-item {
   content: " ";
   display: block;
   clear: both;
+}
+
+/* ################## header-content styling ############ */
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background:(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)): 
+}
+
+.header-content h1 {
+  font-weight: 700;
+}
+
+.header-content p {
+  text-transform: uppercase;
 }
