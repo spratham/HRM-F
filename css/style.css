@@ -70,6 +70,9 @@ h3 {
 .text-grey {
   color: #555;
 }
+.bg-dark {
+  background-color: #263238;
+}
 
 .btn {
   display: inline;
@@ -113,17 +116,17 @@ header {
   padding: 1rem;
 }
 
-header .navbar .logo {
+.navbar .logo {
   float: left;
   font-size: 3.5em;
 }
 
-header .navbar .nav-items {
+.navbar .nav-items {
   float: right;
   margin-top: 1rem;
 }
 
-header .navbar .nav-item {
+.navbar .nav-item {
   display: inline-block;
   padding: 1rem;
   text-transform: uppercase;
@@ -252,11 +255,68 @@ header .navbar .nav-item {
 
 footer {
   background-color: #263238;
- color: #f4f4f4;
- padding: 2rem;
- text-align: center;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
 }
 
-.social-media-links i{
+.social-media-links i {
   margin: 2rem;
+}
+
+/* ####################### About page styling################## */
+
+.about {
+  padding: 5rem 0;
+}
+
+/* .about-heading{
+  border-bottom :5px solid red;
+  width: 500px;
+} */
+.about-heading::after {
+  content: "";
+  display: block;
+  border-top: 6px solid red;
+  width: 100%;
+}
+/* ################# About-wrapper ################# */
+.about-wrapper {
+  border: 2px solid black;
+  text-align: center;
+}
+.about-wrapper .left {
+  float: left;
+  width: 50%;
+}
+
+.about-wrapper .right {
+  float: right;
+  width: 50%;
+}
+
+.about-wrapper::after {
+  content: "";
+  display: block; /*to print content in next line */
+  clear: both;
+}
+
+.about-wrapper li::before {
+  content: "✓";
+  color: red;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+
+.data-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+ 
+}
+
+.data1::after{
+  content: '80';
+  display:block;
 }
