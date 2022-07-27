@@ -43,7 +43,7 @@ h3 {
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -267,7 +267,7 @@ footer {
 /* ####################### About page styling################## */
 
 .about {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 /* .about-heading{
@@ -369,40 +369,138 @@ footer {
 }
 .banner-wrapper .right:hover {
   background-color: grey;
-  
 }
 
 /* ####################### COntact Page ################ */
+
+body{
+
+  background-color: #f7f7f7;
+
+}
+.contact {
+  margin-top: 3rem;
+ 
+
+}
+
+.company-address {
+  float: left;
+  width: 49%;
+  /* border: 2px solid black; */
+  padding: 5px;
+  background-color: #fff;
+  height: 57em;
+}
+.form-wrapper{
+  /* border:10px solid red; */
+}
+.form-wrapper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.form {
+  float: right;
+  width: 49%;
+}
+
+.company-address img {
+  height: 30em;
+  width: 45em;
+  margin-top: 1.8em;
+  margin-left: 1rem;
+  
+}
+
+.company-address span {
+  color: grey;
+  /* letter-spacing: 0.1em; */
+  font-weight: 500;
+  font-size: medium ;
+}
+.company-address p {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: large ;
+}
+
 .contact-form {
-margin-top: 5rem;
+  float: right;
+  width: 49%;
+  /* border: 2px solid black; */
+  padding: 5px;
+  background-color: #fff;
+  height: 57em;
+  
 }
 
-.company-address{
-float:left;
-width: 50%;
-border: 2px solid black;
-padding: 5px ;
+.contact-form h2{
+  border-bottom: 5px solid #e63946;
+  font-size: x-large;
+}
+.contact-form .required{
+  color: black;
+}
+.contact-form .text{
+  color: grey;
+}
+.required::after { content:"*"; color: #e63946;
 }
 
-.form{
-  float:right;
-width: 50%;
-}
-
-.company-address img{
-height: 25em;
-margin-top: 1.2rem;
-
-}
-
-.company-address span{
-
-color: grey;
-letter-spacing: 0.1em;
+.required{
+  color: #263238;
 font-weight: 500;
 }
-.company-address p{
-font-weight: 600;
-  color: grey;
-  
-  }
+.contact-form .btn{
+  font-size: 1.4rem;
+  display: block;
+ margin: 0 auto;
+ padding: 0.5em 3 rem;
+ background-color: #e63946;
+ color: #f7f7f7;
+ border: none;
+ cursor: pointer;
+}
+.contact-form .btn:hover{
+  background-color: #ddd;
+}
+input[type=text] {
+  width: 100%;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=email]  {
+  width: 100%;
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=tel] {
+  width: 100%;
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input[type=tel]:focus {
+  border: 3px solid #555;
+}
+input[type=email]:focus {
+  border: 3px solid #555;
+}

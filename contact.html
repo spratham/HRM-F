@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script
       src="https://kit.fontawesome.com/cd20da48e0.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Travel Website | Contact Page</title>
@@ -22,26 +22,47 @@
         </ul>
       </div>
     </nav>
-    <section class="container contact-form">
-      <div class="form-wrapper">
+    <section class="contact">
+      <div class="container">
+        <div class="form-wrapper">
         <div class="company-address">
           <div class="location">
-        
-            <p><i class="fa-regular fa-map-location fa-1x text-red"></i>  LOCATION</p>
-            <span>#2661 Janakspanuri, city town, town name</span>
-          </div><br>
+            <p><i class="fas fa-map-marker-alt text-red"></i>  LOCATION</p>
+            <span>#980/5, Rajiv Vihar, Naubasta, Kanpur</span>
+          </div>
+        <br>
           <div class="email">
             <p><i class="fa-regular fa-envelope fa-1x text-red"></i>  EMAIL</p>
             <span>Pratham919singh@gmail.com</p>
-          </div><br>
+          </div>
+        
           <div class="call">
-            <p><i class="fa-duotone fa-phone"></i>  CALL</p>
-            <span>+9111616516</span>
-          </div><br>
+            <p><i class="fas fa-phone-square text-red"></i>  CALL</p>
+            <span>+91-7071728886</span>
+          </div>
+        
           <img src="./img/company-img.jpg" alt="">
         </div>
-        <form action="" class="from">Contact Us</form>
+        
+        <form action="" class="contact-form"><h2>Contact Us</h2> 
+        <p class="text">Let us know your suggestions and concerns by filling out contact below</p>
+        <!-- <div> -->
+        <p >
+          <label class="required">Username </label><br><input type="text" style="width: 100%; " required/>        </p>
+        <p >
+          <label class="required">Email </label><br><input type="email" style="width: 100%;"required/>
+        </p>
+        <p >
+          <label class="required">Phone </label><br><input type="tel" style="width: 100%;" required/>       
+        <p >
+          <label class="required">Message </label><br><input type="text" style="width: 100%; height: 150px;" required />
+        </p>
+           <button class="btn">submit</button>
+        
+       <!-- </div> -->
+      </form>
       </div>
+    </div>
     </section>
   </body>
 </html>
