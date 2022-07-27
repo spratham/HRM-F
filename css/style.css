@@ -282,7 +282,7 @@ footer {
 }
 /* ################# About-wrapper ################# */
 .about-wrapper {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   text-align: center;
 }
 .about-wrapper .left {
@@ -308,15 +308,101 @@ footer {
   padding-right: 1rem;
 }
 
+/* ######################### count ###################### */
 
-.data-wrapper{
+.count-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+.count {
+  width: 25%;
+  float: left;
+
+  /* font-size: x-large; */
+
+  font-weight: 700;
+}
+
+.count-wrapper span {
+  color: #e63946;
+
+  font-size: 3rem;
+}
+
+.count-wrapper p {
+  font-size: 1.8rem;
+  color: grey;
+}
+.count-wrapper::after {
+  content: "";
+  display: block; /*to print content in next line */
+  clear: both;
+}
+/* #################### Banner ################# */
+
+.banner-wrapper {
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-evenly;
-  font-size: x-large;
- 
+  height: 75px;
+  justify-content: space-between;
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  align-items: center;
+  box-shadow: 5px 5px 10px #00000033;
+}
+.banner {
+  padding: 5px;
+  color: white;
 }
 
-.data1::after{
-  content: '80';
-  display:block;
+.banner-wrapper .left {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
 }
+.banner-wrapper .right {
+  border: 3px solid white;
+  font-weight: 700;
+  margin-right: 8px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 2.8rem;
+}
+.banner-wrapper .right:hover {
+  background-color: grey;
+  
+}
+
+/* ####################### COntact Page ################ */
+.contact-form {
+margin-top: 5rem;
+}
+
+.company-address{
+float:left;
+width: 50%;
+border: 2px solid black;
+padding: 5px ;
+}
+
+.form{
+  float:right;
+width: 50%;
+}
+
+.company-address img{
+height: 25em;
+margin-top: 1.2rem;
+
+}
+
+.company-address span{
+
+color: grey;
+letter-spacing: 0.1em;
+font-weight: 500;
+}
+.company-address p{
+font-weight: 600;
+  color: grey;
+  
+  }
