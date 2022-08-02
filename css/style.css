@@ -373,15 +373,11 @@ footer {
 
 /* ####################### COntact Page ################ */
 
-body{
-
+body {
   background-color: #f7f7f7;
-
 }
 .contact {
   margin-top: 3rem;
- 
-
 }
 
 .company-address {
@@ -392,10 +388,10 @@ body{
   background-color: #fff;
   height: 57em;
 }
-.form-wrapper{
+.form-wrapper {
   /* border:10px solid red; */
 }
-.form-wrapper::after{
+.form-wrapper::after {
   content: "";
   display: block;
   clear: both;
@@ -410,19 +406,18 @@ body{
   width: 45em;
   margin-top: 1.8em;
   margin-left: 1rem;
-  
 }
 
 .company-address span {
   color: grey;
   /* letter-spacing: 0.1em; */
   font-weight: 500;
-  font-size: medium ;
+  font-size: medium;
 }
 .company-address p {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
-  font-size: large ;
+  font-size: large;
 }
 
 .contact-form {
@@ -432,40 +427,41 @@ body{
   padding: 5px;
   background-color: #fff;
   height: 57em;
-  
 }
 
-.contact-form h2{
+.contact-form h2 {
   border-bottom: 5px solid #e63946;
   font-size: x-large;
 }
-.contact-form .required{
+.contact-form .required {
   color: black;
 }
-.contact-form .text{
+.contact-form .text {
   color: grey;
 }
-.required::after { content:"*"; color: #e63946;
+.required::after {
+  content: "*";
+  color: #e63946;
 }
 
-.required{
+.required {
   color: #263238;
-font-weight: 500;
+  font-weight: 500;
 }
-.contact-form .btn{
+.contact-form .btn {
   font-size: 1.4rem;
   display: block;
- margin: 0 auto;
- padding: 0.5em 3 rem;
- background-color: #e63946;
- color: #f7f7f7;
- border: none;
- cursor: pointer;
+  margin: 0 auto;
+  padding: 0.5em 3 rem;
+  background-color: #e63946;
+  color: #f7f7f7;
+  border: none;
+  cursor: pointer;
 }
-.contact-form .btn:hover{
+.contact-form .btn:hover {
   background-color: #ddd;
 }
-input[type=text] {
+input[type="text"] {
   width: 100%;
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
@@ -475,7 +471,7 @@ input[type=text] {
   transition: 0.5s;
   outline: none;
 }
-input[type=email]  {
+input[type="email"] {
   width: 100%;
   /* padding: 12px 20px; */
   margin: 8px 0;
@@ -485,7 +481,7 @@ input[type=email]  {
   transition: 0.5s;
   outline: none;
 }
-input[type=tel] {
+input[type="tel"] {
   width: 100%;
   /* padding: 12px 20px; */
   margin: 8px 0;
@@ -495,12 +491,110 @@ input[type=tel] {
   transition: 0.5s;
   outline: none;
 }
-input[type=text]:focus {
+input[type="text"]:focus {
   border: 3px solid #555;
 }
-input[type=tel]:focus {
+input[type="tel"]:focus {
   border: 3px solid #555;
 }
-input[type=email]:focus {
+input[type="email"]:focus {
   border: 3px solid #555;
+}
+
+/* ################ media queries ################# */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .header-content .main-heading {
+    display: none;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.306);
+  }
+  .features .box-2,
+  .features .box-3 {
+    margin-top: 7 rem;
+  }
+
+  .box-wrapper {
+    box-shadow: none;
+  }
+  .cta-banner-left,  .cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+.form-wrapper .company-address{
+  float: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+
+
+}
+.form-wrapper .contact-form{
+  float: none;
+  width: 100%;
+  height:auto;
+}
+}
+
+@media(min-width: 501px) and (max-width: 768px){
+  html{
+    font-size: 50%;
+
+  }
+  p{
+    font-size: 1.8rem;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1200px){
+  html{
+    font-size: 56.25% ;
+  }
+  .row .text-box h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+}
+
+@media (orientation:landscape) and (max-height: 500px){
+  .header{
+    height: 90vmax;
+  }
 }
